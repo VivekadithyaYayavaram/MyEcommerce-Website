@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300&family=Montserrat&family=Roboto+Condensed&family=Rubik&display=swap');
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blinking {
+    animation: blink 1s infinite;
+    color: red;
+}
+
+#productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#productsContainer>div {
+    width: 400px;
+    border: 3px solid gray;
+    border-radius: 10px;
+}
